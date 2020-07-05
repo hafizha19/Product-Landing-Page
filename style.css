@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Sacramento&display=swap');
+
+:root {
+    /* background-color: rgb(245, 235, 216); */
+    display: flex;
+    flex-direction: column;
+    --color-orange: #d74c35;
+    --color-blue: #1c8ea0;
+    scroll-behavior: smooth;
+    /* background-image: linear-gradient(var(--color-orange), rgb(25, 107, 76), var(--color-blue)); */
+}
+
+body {
+    /* background-color: rgb(255, 255, 255); */
+    /* background-image: url(./images/Mix.jpeg); */
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url(https://i.pinimg.com/564x/e6/d6/71/e6d67113377c20c86564269841cf6657.jpg);
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: white;
+    box-shadow: 1px 4px 3px rgb(196, 196, 196);
+    font-family: 'Sacramento', cursive;
+    font-size: 23px;
+}
+
+#header-image {
+    width: 100%;
+    max-width: 120px;
+    min-width: 60px;
+    height: auto;
+}
+
+#nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 200px;
+
+}
+
+#nav-bar ul {
+    display: flex;
+}
+
+.nav-link {
+    margin-left: 20%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-blue);
+    font-weight: bolder;
+}
+
+a:hover {
+    color: var(--color-orange);
+}
+
+section {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+#home {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+#label-email {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    height: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+#email {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    width: 300px;
+    height: 20px;
+}
+
+#email:focus::placeholder {
+    color: transparent;
+}
+
+#submit {
+    margin-top: 15px;
+    height: 35px;
+    width: 140px;
+    background-color: var(--color-orange);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+#email:focus {
+    border-image: linear-gradient(to right, var(--color-orange), var(--color-blue));
+    border-image-slice: 1;
+}
+
+#submit:hover {
+    background-color: #1c8ea0;
+}
+
+#home .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#deskripsi-home {
+    display: flex;
+    text-align: center;
+    margin-top: -10px;
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+}
+
+#home img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
