@@ -216,16 +216,55 @@ button:hover {
     color: white;
 }
 
-#video {
 
+#video {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #efb5d0;
+    padding: 10px;
 }
 
+#reviews .container {
+    margin-top: -50px;
+} 
+
 .review {
-    border: 1px ridge #FF9EC5;
+    width: 250px;
+    border: 2px solid #efb5d0;
+    border-radius: 20px;
 }
 
 .review img {
+    /* width: 100%; */
+    height: 100%;
+    width: auto;
+    max-height: 250px;
+}
+
+.review figcaption {
+    max-height: 100px;
+    width: auto;
+    align-items: center;
+}
+
+.medsos {
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.medsos img {
     width: 100%;
-    max-width: 200px;
+    max-width: 50px;
     height: auto;
+    margin-left: 20px;
+}
+
+.medsos figcaption {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
